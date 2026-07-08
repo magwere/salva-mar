@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SALVAMAR - Pescados y Mariscos de Panamá para Mercados Internacionales</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         :root {
@@ -19,11 +21,15 @@
             --text: #2d3748;
             --text-light: #718096;
             --border: #e2e8f0;
-            --shadow: 0 4px 20px rgba(0,0,0,0.08);
-            --shadow-lg: 0 10px 40px rgba(0,0,0,0.12);
+            --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.12);
         }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
         body {
             font-family: 'Inter', sans-serif;
@@ -36,9 +42,11 @@
         /* ===== NAVBAR ===== */
         .navbar {
             position: fixed;
-            top: 0; left: 0; right: 0;
+            top: 0;
+            left: 0;
+            right: 0;
             z-index: 1000;
-            background: rgba(255,255,255,0.95);
+            background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
             border-bottom: 1px solid var(--border);
             transition: all 0.3s ease;
@@ -80,7 +88,9 @@
             letter-spacing: -0.5px;
         }
 
-        .logo-text span { color: var(--accent); }
+        .logo-text span {
+            color: var(--accent);
+        }
 
         .nav-links {
             display: flex;
@@ -98,7 +108,10 @@
             position: relative;
         }
 
-        .nav-links a:hover, .nav-links a.active { color: var(--accent); }
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--accent);
+        }
 
         .nav-links a.active::after {
             content: '';
@@ -154,7 +167,7 @@
         .hero-overlay {
             position: absolute;
             inset: 0;
-            background: linear-gradient(135deg, rgba(26,47,74,0.92) 0%, rgba(26,47,74,0.75) 50%, rgba(26,47,74,0.85) 100%);
+            background: linear-gradient(135deg, rgba(26, 47, 74, 0.92) 0%, rgba(26, 47, 74, 0.75) 50%, rgba(26, 47, 74, 0.85) 100%);
         }
 
         .hero-container {
@@ -178,11 +191,13 @@
             letter-spacing: -1px;
         }
 
-        .hero-content h1 span { color: var(--accent); }
+        .hero-content h1 span {
+            color: var(--accent);
+        }
 
         .hero-content p {
             font-size: 18px;
-            color: rgba(255,255,255,0.8);
+            color: rgba(255, 255, 255, 0.8);
             line-height: 1.7;
             margin-bottom: 36px;
             max-width: 520px;
@@ -216,18 +231,18 @@
         .btn-primary:hover {
             background: var(--accent-hover);
             transform: translateY(-2px);
-            box-shadow: 0 8px 24px rgba(28,181,196,0.3);
+            box-shadow: 0 8px 24px rgba(28, 181, 196, 0.3);
         }
 
         .btn-outline {
             background: transparent;
             color: var(--white);
-            border: 2px solid rgba(255,255,255,0.3);
+            border: 2px solid rgba(255, 255, 255, 0.3);
         }
 
         .btn-outline:hover {
             border-color: var(--white);
-            background: rgba(255,255,255,0.1);
+            background: rgba(255, 255, 255, 0.1);
         }
 
         .hero-image {
@@ -304,15 +319,15 @@
             align-items: center;
             gap: 16px;
             padding: 20px;
-            background: rgba(255,255,255,0.05);
+            background: rgba(255, 255, 255, 0.05);
             border-radius: 12px;
-            border: 1px solid rgba(255,255,255,0.08);
+            border: 1px solid rgba(255, 255, 255, 0.08);
         }
 
         .trust-icon {
             width: 48px;
             height: 48px;
-            background: rgba(28,181,196,0.15);
+            background: rgba(28, 181, 196, 0.15);
             border-radius: 10px;
             display: flex;
             align-items: center;
@@ -330,7 +345,7 @@
         }
 
         .trust-text p {
-            color: rgba(255,255,255,0.6);
+            color: rgba(255, 255, 255, 0.6);
             font-size: 13px;
             line-height: 1.4;
         }
@@ -349,7 +364,7 @@
         .section-tag {
             display: inline-block;
             padding: 6px 16px;
-            background: rgba(28,181,196,0.1);
+            background: rgba(28, 181, 196, 0.1);
             color: var(--accent);
             font-size: 13px;
             font-weight: 600;
@@ -404,8 +419,10 @@
         .about-image::before {
             content: '';
             position: absolute;
-            top: 20px; left: 20px;
-            right: -20px; bottom: -20px;
+            top: 20px;
+            left: 20px;
+            right: -20px;
+            bottom: -20px;
             border: 3px solid var(--accent);
             border-radius: 16px;
             z-index: -1;
@@ -539,7 +556,9 @@
             transition: gap 0.3s;
         }
 
-        .product-link:hover { gap: 10px; }
+        .product-link:hover {
+            gap: 10px;
+        }
 
         /* ===== EXPORTACIÓN ===== */
         .export {
@@ -552,7 +571,8 @@
         .export::before {
             content: '';
             position: absolute;
-            top: 0; right: 0;
+            top: 0;
+            right: 0;
             width: 50%;
             height: 100%;
             background: url('https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=1200&q=80') center/cover;
@@ -575,7 +595,7 @@
         }
 
         .export-content p {
-            color: rgba(255,255,255,0.75);
+            color: rgba(255, 255, 255, 0.75);
             font-size: 16px;
             line-height: 1.8;
             margin-bottom: 32px;
@@ -599,10 +619,10 @@
         }
 
         .export-map {
-            background: rgba(255,255,255,0.05);
+            background: rgba(255, 255, 255, 0.05);
             border-radius: 16px;
             padding: 40px;
-            border: 1px solid rgba(255,255,255,0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .export-map h3 {
@@ -618,7 +638,7 @@
         }
 
         .flag-item {
-            background: rgba(255,255,255,0.08);
+            background: rgba(255, 255, 255, 0.08);
             padding: 16px;
             border-radius: 10px;
             text-align: center;
@@ -626,7 +646,7 @@
         }
 
         .flag-item:hover {
-            background: rgba(255,255,255,0.15);
+            background: rgba(255, 255, 255, 0.15);
             transform: translateY(-2px);
         }
 
@@ -836,7 +856,8 @@
         .contact::before {
             content: '';
             position: absolute;
-            bottom: 0; left: 0;
+            bottom: 0;
+            left: 0;
             width: 100%;
             height: 50%;
             background: url('https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1920&q=80') center/cover;
@@ -859,7 +880,7 @@
         }
 
         .contact-info p {
-            color: rgba(255,255,255,0.75);
+            color: rgba(255, 255, 255, 0.75);
             font-size: 16px;
             line-height: 1.8;
             margin-bottom: 32px;
@@ -874,13 +895,13 @@
             align-items: flex-start;
             gap: 16px;
             margin-bottom: 20px;
-            color: rgba(255,255,255,0.85);
+            color: rgba(255, 255, 255, 0.85);
         }
 
         .contact-details i {
             width: 44px;
             height: 44px;
-            background: rgba(28,181,196,0.15);
+            background: rgba(28, 181, 196, 0.15);
             border-radius: 10px;
             display: flex;
             align-items: center;
@@ -941,7 +962,7 @@
         .form-group textarea:focus {
             outline: none;
             border-color: var(--accent);
-            box-shadow: 0 0 0 3px rgba(28,181,196,0.1);
+            box-shadow: 0 0 0 3px rgba(28, 181, 196, 0.1);
         }
 
         .form-group textarea {
@@ -971,7 +992,7 @@
         /* ===== FOOTER ===== */
         .footer {
             background: var(--primary-dark);
-            color: rgba(255,255,255,0.7);
+            color: rgba(255, 255, 255, 0.7);
             padding: 60px 0 0;
         }
 
@@ -1002,7 +1023,7 @@
         .footer-social a {
             width: 40px;
             height: 40px;
-            background: rgba(255,255,255,0.08);
+            background: rgba(255, 255, 255, 0.08);
             border-radius: 10px;
             display: flex;
             align-items: center;
@@ -1033,24 +1054,27 @@
         }
 
         .footer-col ul li a {
-            color: rgba(255,255,255,0.6);
+            color: rgba(255, 255, 255, 0.6);
             text-decoration: none;
             font-size: 14px;
             transition: color 0.3s;
         }
 
-        .footer-col ul li a:hover { color: var(--accent); }
+        .footer-col ul li a:hover {
+            color: var(--accent);
+        }
 
         .footer-bottom {
-            border-top: 1px solid rgba(255,255,255,0.08);
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
             padding: 24px 0;
             text-align: center;
             font-size: 13px;
-            color: rgba(255,255,255,0.4);
+            color: rgba(255, 255, 255, 0.4);
         }
 
         /* ===== RESPONSIVE ===== */
         @media (max-width: 1024px) {
+
             .hero-container,
             .about-grid,
             .export-grid,
@@ -1059,32 +1083,66 @@
                 gap: 40px;
             }
 
-            .hero-content h1 { font-size: 40px; }
-            .hero-image { order: -1; }
-            .hero-image img { transform: none; }
+            .hero-content h1 {
+                font-size: 40px;
+            }
+
+            .hero-image {
+                order: -1;
+            }
+
+            .hero-image img {
+                transform: none;
+            }
 
             .products-grid,
-            .shop-grid { grid-template-columns: repeat(2, 1fr); }
+            .shop-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
 
-            .trust-container { grid-template-columns: repeat(2, 1fr); }
+            .trust-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
 
-            .footer-grid { grid-template-columns: repeat(2, 1fr); }
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
 
         @media (max-width: 768px) {
-            .nav-links { display: none; }
-            .mobile-toggle { display: block; }
+            .nav-links {
+                display: none;
+            }
 
-            .hero-content h1 { font-size: 32px; }
-            .section-title { font-size: 28px; }
+            .mobile-toggle {
+                display: block;
+            }
+
+            .hero-content h1 {
+                font-size: 32px;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
 
             .products-grid,
             .shop-grid,
-            .trust-container { grid-template-columns: 1fr; }
+            .trust-container {
+                grid-template-columns: 1fr;
+            }
 
-            .about-stats { grid-template-columns: 1fr; }
-            .form-row { grid-template-columns: 1fr; }
-            .footer-grid { grid-template-columns: 1fr; }
+            .about-stats {
+                grid-template-columns: 1fr;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
 
             .shop-header {
                 flex-direction: column;
@@ -1095,8 +1153,15 @@
 
         /* ===== ANIMATIONS ===== */
         @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .fade-in {
@@ -1104,12 +1169,22 @@
         }
 
         /* ===== SCROLLBAR ===== */
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: var(--light); }
-        ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 4px; }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--light);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--accent);
+            border-radius: 4px;
+        }
     </style>
-<base target="_blank">
+    <base target="_blank">
 </head>
+
 <body>
 
     <!-- ===== NAVBAR ===== -->
@@ -1127,7 +1202,8 @@
                 <li><a href="#exportacion">Export</a></li>
                 <li><a href="#nosotros">About</a></li>
                 <li><a href="#contacto">Contact</a></li>
-                <li><a href="https://salva-mar.com/tienda/" target="_blank" class="nav-cta"><i class="fas fa-store"></i> Tienda Online</a></li>
+                <li><a href="https://salva-mar.com/tienda/" target="_blank" class="nav-cta"><i class="fas fa-store"></i>
+                        Tienda Online</a></li>
             </ul>
             <div class="mobile-toggle"><i class="fas fa-bars"></i></div>
         </div>
@@ -1140,14 +1216,20 @@
         <div class="hero-container">
             <div class="hero-content">
                 <h1>SALVAMAR, pescados y mariscos de <span>Panamá</span> para mercados internacionales.</h1>
-                <p>Con más de 25 años de experiencia exportadora, garantizamos calidad premium, frescura constante y atención personalizada para clientes globales. Exportamos desde la República de Panamá con los más altos estándares internacionales.</p>
+                <p>Con más de 25 años de experiencia exportadora, garantizamos calidad premium, frescura constante y
+                    atención personalizada para clientes globales. Exportamos desde la República de Panamá con los más
+                    altos estándares internacionales.</p>
                 <div class="hero-buttons">
-                    <a href="#contacto" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Solicitar Cotización</a>
-                    <a href="https://salva-mar.com/tienda/" target="_blank" class="btn btn-outline"><i class="fas fa-shopping-bag"></i> Ver Tienda Online</a>
+                    <a href="#contacto" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Solicitar
+                        Cotización</a>
+                    <a href="https://salva-mar.com/tienda/" target="_blank" class="btn btn-outline"><i
+                            class="fas fa-shopping-bag"></i> Ver Tienda Online</a>
                 </div>
             </div>
             <div class="hero-image">
-                <img src="https://images.unsplash.com/photo-1615141982880-1313d06a7c29?w=800&q=80" alt="Productos del mar premium">
+                <img src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=800&q=80"
+                    alt="Productos del mar premium - Pescados y Mariscos de Panamá"
+                    onerror="this.src='https://images.unsplash.com/photo-1510130387422-82bed34b37e9?w=800&q=80'">
                 <div class="hero-badge">
                     <div class="hero-badge-icon"><i class="fas fa-award"></i></div>
                     <div class="hero-badge-text">
@@ -1198,14 +1280,21 @@
         <div class="container">
             <div class="about-grid">
                 <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1534939561126-855b8675edd7?w=800&q=80" alt="Instalaciones SALVAMAR">
+                    <img src="https://images.unsplash.com/photo-1510130387422-82bed34b37e9?w=800&q=80"
+                        alt="Instalaciones SALVAMAR - Puerto de Boca de Parita"
+                        onerror="this.src='https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=800&q=80'">
                 </div>
                 <div class="about-content">
                     <span class="section-tag">Sobre Nosotros</span>
                     <h2>Líderes en exportación de productos del mar desde Panamá</h2>
-                    <p>Somos una empresa líder en la exportación de productos del mar de alta calidad con más de 25 años en el mercado internacional. Nos diferenciamos por la calidad, constancia y seguridad que ofrecemos a nuestros clientes durante todo el año.</p>
-                    <p>Exportamos desde la República de Panamá a Estados Unidos, Puerto Rico, México, Costa Rica, Colombia, Aruba, Curazao y más. Nuestros colaboradores están certificados en Buenas Prácticas de Manufactura (GMP) y Procedimientos Operativos Estandarizados de Sanitización (SSOP).</p>
-                    <p>Mantenemos un plan de Análisis de Peligros y Puntos Críticos de Control (HACCP) aprobado por la FDA. Adicionalmente, nuestros productos provienen de la zona de captura 77 de la FAO.</p>
+                    <p>Somos una empresa líder en la exportación de productos del mar de alta calidad con más de 25 años
+                        en el mercado internacional. Nos diferenciamos por la calidad, constancia y seguridad que
+                        ofrecemos a nuestros clientes durante todo el año.</p>
+                    <p>Exportamos desde la República de Panamá a Estados Unidos, Puerto Rico, México, Costa Rica,
+                        Colombia, Aruba, Curazao y más. Nuestros colaboradores están certificados en Buenas Prácticas de
+                        Manufactura (GMP) y Procedimientos Operativos Estandarizados de Sanitización (SSOP).</p>
+                    <p>Mantenemos un plan de Análisis de Peligros y Puntos Críticos de Control (HACCP) aprobado por la
+                        FDA. Adicionalmente, nuestros productos provienen de la zona de captura 77 de la FAO.</p>
                     <div class="about-stats">
                         <div class="stat-item">
                             <span class="stat-number">25+</span>
@@ -1231,51 +1320,67 @@
             <div class="section-header">
                 <span class="section-tag">Nuestros Productos</span>
                 <h2 class="section-title">Nuestra Gama de Productos Premium</h2>
-                <p class="section-subtitle">Manejamos 60 variedades de productos del mar divididos en 4 grandes categorías, todos con la máxima calidad y frescura garantizada.</p>
+                <p class="section-subtitle">Manejamos 60 variedades de productos del mar divididos en 4 grandes
+                    categorías, todos con la máxima calidad y frescura garantizada.</p>
             </div>
             <div class="products-grid">
                 <div class="product-card">
                     <div class="product-badge">1</div>
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1534939561126-855b8675edd7?w=600&q=80" alt="Congelados">
+                        <img src="https://images.unsplash.com/photo-1565183928294-7063f23ce0f8?w=600&q=80"
+                            alt="Camarones y productos congelados del mar"
+                            onerror="this.src='https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=600&q=80'">
                     </div>
                     <div class="product-content">
                         <h3>Congelados</h3>
-                        <p>Camarones, langostinos, pulpo, corvinas, langostinos, pulpo, pampanita, pampanitos, pulpo premium...</p>
-                        <a href="https://salva-mar.com/tienda/" target="_blank" class="product-link">Ver detalles <i class="fas fa-arrow-right"></i></a>
+                        <p>Camarones, langostinos, pulpo, corvinas, langostinos, pulpo, pampanita, pampanitos, pulpo
+                            premium...</p>
+                        <a href="https://salva-mar.com/tienda/" target="_blank" class="product-link">Ver detalles <i
+                                class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="product-card">
                     <div class="product-badge">2</div>
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1559737558-2f5a3f3f3f3f?w=600&q=80" alt="Selección Gourmet" onerror="this.src='https://images.unsplash.com/photo-1615141982880-1313d06a7c29?w=600&q=80'">
+                        <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=600&q=80"
+                            alt="Selección Gourmet - Mariscos premium del Pacífico"
+                            onerror="this.src='https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=600&q=80'">
                     </div>
                     <div class="product-content">
                         <h3>Selección Gourmet</h3>
-                        <p>Mariscos selectos, pescados premium. Mariscos selectos, pescados premium de la mejor calidad...</p>
-                        <a href="https://salva-mar.com/tienda/" target="_blank" class="product-link">Ver detalles <i class="fas fa-arrow-right"></i></a>
+                        <p>Mariscos selectos, pescados premium. Mariscos selectos, pescados premium de la mejor
+                            calidad...</p>
+                        <a href="https://salva-mar.com/tienda/" target="_blank" class="product-link">Ver detalles <i
+                                class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="product-card">
                     <div class="product-badge">3</div>
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=600&q=80" alt="Filetes">
+                        <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=600&q=80"
+                            alt="Filetes frescos - Mero, Pargo, Corvina"
+                            onerror="this.src='https://images.unsplash.com/photo-1510130387422-82bed34b37e9?w=600&q=80'">
                     </div>
                     <div class="product-content">
                         <h3>Filetes</h3>
-                        <p>Mero, Pargo, Corvina, Nuri, Pargo, Corvina, Hito, Vero, Mero, Pargo, Corvina, pescados premium...</p>
-                        <a href="https://salva-mar.com/tienda/" target="_blank" class="product-link">Ver detalles <i class="fas fa-arrow-right"></i></a>
+                        <p>Mero, Pargo, Corvina, Nuri, Pargo, Corvina, Hito, Vero, Mero, Pargo, Corvina, pescados
+                            premium...</p>
+                        <a href="https://salva-mar.com/tienda/" target="_blank" class="product-link">Ver detalles <i
+                                class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="product-card">
                     <div class="product-badge">4</div>
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1559737558-2f5a3f3f3f3f?w=600&q=80" alt="Especiales" onerror="this.src='https://images.unsplash.com/photo-1534939561126-855b8675edd7?w=600&q=80'">
+                        <img src="https://images.unsplash.com/photo-1587083891350-9b5d6f8de14a?w=600&q=80"
+                            alt="Especiales - Langosta, Cangrejo, Pulpo"
+                            onerror="this.src='https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=600&q=80'">
                     </div>
                     <div class="product-content">
                         <h3>Especiales</h3>
                         <p>Cangrejo, Vieira, cangrejos, Vieira, cangrejos, pescados, Pulpo, Langosta, Viera...</p>
-                        <a href="https://salva-mar.com/tienda/" target="_blank" class="product-link">Ver detalles <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://salva-mar.com/tienda/" target="_blank" class="product-link">Ver detalles <i
+                                class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -1289,7 +1394,9 @@
                 <div class="export-content">
                     <span class="section-tag" style="background:rgba(255,255,255,0.1);color:#fff;">Exportación</span>
                     <h2>Exportamos a los mercados más exigentes del mundo</h2>
-                    <p>Con una red logística robusta y certificaciones internacionales, llevamos los mejores productos del mar panameño a clientes en todo el mundo. Garantizamos cadena de frío, trazabilidad completa y cumplimiento normativo.</p>
+                    <p>Con una red logística robusta y certificaciones internacionales, llevamos los mejores productos
+                        del mar panameño a clientes en todo el mundo. Garantizamos cadena de frío, trazabilidad completa
+                        y cumplimiento normativo.</p>
                     <ul class="export-list">
                         <li><i class="fas fa-check-circle"></i> Cadena de frío garantizada desde la captura</li>
                         <li><i class="fas fa-check-circle"></i> Trazabilidad completa de cada lote</li>
@@ -1350,14 +1457,18 @@
                 <div class="section-header">
                     <span class="section-tag">Tienda Online</span>
                     <h2 class="section-title">Compra directamente en nuestra tienda</h2>
-                    <p class="section-subtitle">Visita www.salva-mar.com y encuentra nuestros productos disponibles para compra directa.</p>
+                    <p class="section-subtitle">Visita www.salva-mar.com y encuentra nuestros productos disponibles para
+                        compra directa.</p>
                 </div>
-                <a href="https://salva-mar.com/tienda/" target="_blank" class="shop-btn"><i class="fas fa-external-link-alt"></i> Visitar Tienda</a>
+                <a href="https://salva-mar.com/tienda/" target="_blank" class="shop-btn"><i
+                        class="fas fa-external-link-alt"></i> Visitar Tienda</a>
             </div>
             <div class="shop-grid">
                 <div class="shop-card">
                     <div class="shop-image">
-                        <img src="https://images.unsplash.com/photo-1534939561126-855b8675edd7?w=600&q=80" alt="Bonito">
+                        <img src="https://images.unsplash.com/photo-1532980400857-e8d9d275d858?w=600&q=80"
+                            alt="Bonito - Euthynnus lineatus"
+                            onerror="this.src='https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=600&q=80'">
                         <span class="shop-tag">Disponible</span>
                     </div>
                     <div class="shop-info">
@@ -1371,7 +1482,9 @@
                 </div>
                 <div class="shop-card">
                     <div class="shop-image">
-                        <img src="https://images.unsplash.com/photo-1615141982880-1313d06a7c29?w=600&q=80" alt="Dorado">
+                        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&q=80"
+                            alt="Dorado Mahi-Mahi - Coryphaena hippurus"
+                            onerror="this.src='https://images.unsplash.com/photo-1510130387422-82bed34b37e9?w=600&q=80'">
                         <span class="shop-tag">Premium</span>
                     </div>
                     <div class="shop-info">
@@ -1385,7 +1498,9 @@
                 </div>
                 <div class="shop-card">
                     <div class="shop-image">
-                        <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=600&q=80" alt="Pargo Mancha">
+                        <img src="https://images.unsplash.com/photo-1615141982880-1313d06a7c29?w=600&q=80"
+                            alt="Pargo Mancha - Lutjanus guttatus"
+                            onerror="this.src='https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=600&q=80'">
                         <span class="shop-tag">Disponible</span>
                     </div>
                     <div class="shop-info">
@@ -1399,7 +1514,9 @@
                 </div>
                 <div class="shop-card">
                     <div class="shop-image">
-                        <img src="https://images.unsplash.com/photo-1559737558-2f5a3f3f3f3f?w=600&q=80" alt="Atún" onerror="this.src='https://images.unsplash.com/photo-1615141982880-1313d06a7c29?w=600&q=80'">
+                        <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=600&q=80"
+                            alt="Atún Aleta Amarilla - Thunnus albacares"
+                            onerror="this.src='https://images.unsplash.com/photo-1532980400857-e8d9d275d858?w=600&q=80'">
                         <span class="shop-tag">Premium</span>
                     </div>
                     <div class="shop-info">
@@ -1421,7 +1538,8 @@
             <div class="section-header">
                 <span class="section-tag">Certificaciones</span>
                 <h2 class="section-title">Estándares Internacionales de Calidad</h2>
-                <p class="section-subtitle">Cumplimos con las certificaciones más exigentes del mercado para garantizar la máxima calidad y seguridad alimentaria.</p>
+                <p class="section-subtitle">Cumplimos con las certificaciones más exigentes del mercado para garantizar
+                    la máxima calidad y seguridad alimentaria.</p>
             </div>
             <div class="cert-grid">
                 <div class="cert-item">
@@ -1465,7 +1583,8 @@
                 <div class="contact-info">
                     <span class="section-tag" style="background:rgba(255,255,255,0.1);color:#fff;">Contacto</span>
                     <h2>Solicite su Cotización B2B</h2>
-                    <p>Contáctenos y déjenos saber sus necesidades de productos. Nuestro equipo especializado le atenderá con atención personalizada para su cuenta B2B.</p>
+                    <p>Contáctenos y déjenos saber sus necesidades de productos. Nuestro equipo especializado le
+                        atenderá con atención personalizada para su cuenta B2B.</p>
                     <ul class="contact-details">
                         <li>
                             <i class="fas fa-envelope"></i>
@@ -1533,9 +1652,11 @@
                         </div>
                         <div class="form-group">
                             <label>Mensaje</label>
-                            <textarea placeholder="Describa sus necesidades, volumen requerido, destino de exportación..."></textarea>
+                            <textarea
+                                placeholder="Describa sus necesidades, volumen requerido, destino de exportación..."></textarea>
                         </div>
-                        <button type="submit" class="form-submit"><i class="fas fa-paper-plane"></i> Enviar Solicitud</button>
+                        <button type="submit" class="form-submit"><i class="fas fa-paper-plane"></i> Enviar
+                            Solicitud</button>
                     </form>
                 </div>
             </div>
@@ -1547,8 +1668,10 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <span class="logo-text" style="font-size:24px;">SALVA<span style="color:var(--accent);">MAR</span></span>
-                    <p>Líderes en exportación de productos del mar de alta calidad desde Panamá. Más de 25 años de experiencia garantizando frescura y calidad premium a mercados internacionales.</p>
+                    <span class="logo-text" style="font-size:24px;">SALVA<span
+                            style="color:var(--accent);">MAR</span></span>
+                    <p>Líderes en exportación de productos del mar de alta calidad desde Panamá. Más de 25 años de
+                        experiencia garantizando frescura y calidad premium a mercados internacionales.</p>
                     <div class="footer-social">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
@@ -1587,7 +1710,8 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2026 SALVAMAR, S.A. Todos los derechos reservados. | <a href="https://salva-mar.com" target="_blank" style="color:var(--accent);text-decoration:none;">www.salva-mar.com</a></p>
+                <p>© 2026 SALVAMAR, S.A. Todos los derechos reservados. | <a href="https://salva-mar.com"
+                        target="_blank" style="color:var(--accent);text-decoration:none;">www.salva-mar.com</a></p>
             </div>
         </div>
     </footer>
@@ -1595,17 +1719,17 @@
     <script>
         // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
+            anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
-                if(target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
             });
         });
 
         // Navbar scroll effect
         window.addEventListener('scroll', () => {
             const navbar = document.querySelector('.navbar');
-            if(window.scrollY > 50) {
+            if (window.scrollY > 50) {
                 navbar.style.boxShadow = '0 2px 20px rgba(0,0,0,0.1)';
             } else {
                 navbar.style.boxShadow = 'none';
@@ -1618,13 +1742,14 @@
             let current = '';
             sections.forEach(section => {
                 const sectionTop = section.offsetTop - 100;
-                if(scrollY >= sectionTop) current = section.getAttribute('id');
+                if (scrollY >= sectionTop) current = section.getAttribute('id');
             });
             document.querySelectorAll('.nav-links a').forEach(link => {
                 link.classList.remove('active');
-                if(link.getAttribute('href') === '#' + current) link.classList.add('active');
+                if (link.getAttribute('href') === '#' + current) link.classList.add('active');
             });
         });
     </script>
 </body>
+
 </html>
